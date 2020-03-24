@@ -1,8 +1,9 @@
 <template>
   <div class="case">
-    <h2>{{ cases[0].date }}</h2>
     <ul>
-      <li v-for="case in cases" :key="case.did">test</li>
+      <li v-for="item in items" :key="item">
+        {{ item.date }}: {{ item.total }}
+      </li>
     </ul>
   </div>
 </template>
@@ -10,7 +11,7 @@
 <script>
 export default {
   name: 'Cases',
-  props: ['cases']
+  props: ['items']
 }
 </script>
 

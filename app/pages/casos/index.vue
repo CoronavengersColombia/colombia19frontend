@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>Proyección de casos por día en Colombia</h1>
-    <Cases :cases="cases" />
+    <Cases :items="cases" />
   </section>
 </template>
 
