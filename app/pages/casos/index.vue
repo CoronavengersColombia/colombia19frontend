@@ -1,24 +1,17 @@
 <template>
   <section>
     <h1>Proyección de casos por día en Colombia</h1>
-    <ul>
-      <Case
-        v-for="case in cases"
-        :key="case.did"
-        :did="case.did"
-        :date="case.date"
-        :total="case.total" />
-    </ul>
+    <Cases :cases="cases" />
   </section>
 </template>
 
 <script>
 import axios from 'axios'
-import Case from '../../components/Case'
+import Cases from '../../components/Cases'
 
 export default {
   components: {
-    Case
+    Cases
   },
   data() {
     return {
