@@ -22,11 +22,12 @@ export default {
     const config = {
       headers: {
         'Content-Type': 'application/json'
-      }
+      },
+      crossdomain: true
     }
 
     try {
-      const url = 'http://192.168.0.13:5000/api/cases/'
+      const url = 'https://colombia19-api.herokuapp.com/api/cases/'
       const response = await axios.get(url, config)
       this.cases = response.data
     } catch (err) {

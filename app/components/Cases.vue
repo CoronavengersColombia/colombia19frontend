@@ -1,8 +1,8 @@
 <template>
   <div class="case">
     <ul>
-      <li v-for="item in cases" :key="item">
-        {{ item.date }}: {{ item.total }}
+      <li v-for="item in cases" :key="item.did">
+        {{ item.date }}: {{ item.count }}
       </li>
     </ul>
   </div>
