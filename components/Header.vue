@@ -5,7 +5,7 @@
       <li>
         <nuxt-link to="/">Inicio</nuxt-link>
         <nuxt-link to="/casos">Casos</nuxt-link>
-        <nuxt-link to="/proyecto">Acerca de</nuxt-link>
+        <nuxt-link to="/proyecto">Proyecto</nuxt-link>
       </li>
     </ul>
   </header>
