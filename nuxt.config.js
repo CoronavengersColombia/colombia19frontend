@@ -55,5 +55,11 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  }
+  },
+  // /*
+  //  ** Router
+  //  */
+  // router: {
+  //   base: '/<repository-name>/'
+  // }
 }
