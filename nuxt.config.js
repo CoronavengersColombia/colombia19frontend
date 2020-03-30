@@ -1,5 +1,16 @@
+
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/colombia19frontend/'
+  }
+} : {}
+
 export default {
   mode: 'universal',
+  /*
+   ** Router
+   */
+  routerBase,
   /*
    ** Headers of the page
    */
@@ -55,11 +66,5 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  },
-  // /*
-  //  ** Router
-  //  */
-  // router: {
-  //   base: '/<repository-name>/'
-  // }
+  }
 }
