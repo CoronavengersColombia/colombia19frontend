@@ -3,9 +3,9 @@
     <h1>Colombia 19</h1>
     <ul>
       <li>
-        <nuxt-link to="/">Inicio</nuxt-link>
-        <nuxt-link to="/casos">Casos</nuxt-link>
-        <nuxt-link to="/proyecto">Proyecto</nuxt-link>
+        <nuxt-link to="./">Inicio</nuxt-link>
+        <nuxt-link to="casos">Casos</nuxt-link>
+        <nuxt-link to="proyecto">Proyecto</nuxt-link>
       </li>
     </ul>
   </header>
