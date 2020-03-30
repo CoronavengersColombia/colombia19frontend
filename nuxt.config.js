@@ -10,8 +10,7 @@ export default {
   /*
    ** Router
    */
-  // routerBase,
-  base: '/colombia19frontend/',
+  routerBase,
   /*
    ** Headers of the page
    */
