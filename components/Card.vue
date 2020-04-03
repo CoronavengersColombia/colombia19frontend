@@ -20,12 +20,13 @@ export default {
 </script>
 
 <style lang="scss">
+
   .card {
     margin: auto;
     padding: 20px 0;
     width: 100%;
   
-    @media #{$medium-up} {
+    @media screen and (min-width: $medium)  {
       width: 600px;
     }
   }
