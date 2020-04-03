@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <Header />
-    <nuxt />
-  </div>
+  <v-app>
+    <div class="wrapper">
+      <Header />
+      <nuxt />
+    </div>
+  </v-app>
 </template>
 <script>
 import Header from '../components/Header'
@@ -14,4 +16,11 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+  .wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0 5%;
+    width: 100%;
+  }
+</style>

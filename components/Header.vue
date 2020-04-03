@@ -4,8 +4,8 @@
     <ul>
       <li>
         <nuxt-link to="/colombia19frontend/">Inicio</nuxt-link>
-        <nuxt-link to="/colombia19frontend/casos">Casos</nuxt-link>
-        <nuxt-link to="/colombia19frontend/proyecto">Proyecto</nuxt-link>
+        <nuxt-link to="/colombia19frontend/mercados">Mercaditos</nuxt-link>
+        <nuxt-link to="/colombia19frontend/proyecto">Quiero donar</nuxt-link>
       </li>
     </ul>
   </header>
