@@ -20,7 +20,7 @@ export default {
   .wrapper {
     height: 100%;
     margin: 0;
-    padding: 0 5%;
+    padding: 0;
     width: 100%;
   }
 </style>

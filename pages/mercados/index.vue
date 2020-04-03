@@ -1,6 +1,5 @@
 <template>
   <section>
-    <h1>Mercados</h1>
     <Grid :items="stores" />
   </section>
 </template>
