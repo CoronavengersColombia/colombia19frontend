@@ -1,13 +1,23 @@
 <template>
     <article class="card">
       <v-card hover>
-        <v-card-title>
-          {{ title }}
-        </v-card-title>    
-        <v-card-text>
-          <p>{{ title }}</p>
-          <b>{{ contact }}</b>
-        </v-card-text>
+        <v-list-item three-line>
+          <v-list-item-content>
+            <div class="overline mb-4">{{ type }}</div>
+            <v-list-item-title class="headline mb-1">{{ title }}</v-list-item-title>
+            <p>{{ description }}</p>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-card-actions>
+          <v-btn
+            v-for="(item, index) in contact"
+            :key="index"
+            text
+          > 
+            {{ item }}
+          </v-btn>
+        </v-card-actions>
       </v-card>
     </article>
 </template>
@@ -15,7 +25,7 @@
 <script>
 export default {
   name: 'Card',
-  props: ['title', 'body', 'contact']
+  props: ['title', 'type', 'description', 'contact']
 }
 </script>
 

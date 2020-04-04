@@ -1,7 +1,7 @@
 <template v-slot:activator="{ on }">
   <header>
     <nav>
-      <v-toolbar color="indigo" dark fixed>
+      <v-toolbar color="#4DB6AC" dark fixed>
         <v-toolbar-title>{{ title }}</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
@@ -44,8 +44,8 @@ export default {
     title: 'Colombia 19',
     menu: [
       { id: 1, title: "Inicio", link: '/colombia19frontend/' },
-      { id: 2, title: "Mercar desde casa", link: '/colombia19frontend/mercados/' },
-      { id: 3, title: "Donaciones", link: '/colombia19frontend/donar' }
+      { id: 2, title: "Mercar desde casa", link: '/colombia19frontend/mercados/' }
+      // { id: 3, title: "Donaciones", link: '/colombia19frontend/donar' }
     ]
   })
 }
@@ -54,6 +54,10 @@ export default {
 header {
   h1 {
     color: #000000;
+  }
+
+  .v-menu {
+    display: block;
   }
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <section>
+    <Hero :src="hero.src" :alt="hero.alt" />
     <Grid :items="stores" />
   </section>
 </template>
@@ -7,26 +8,32 @@
 <script>
 import axios from 'axios'
 import Grid from '../../components/Grid'
+import Hero from '../../components/Hero'
 
 export default {
   components: {
+    Hero,
     Grid
   },
   data() {
     return {
       cases: [],
+      hero: {
+        src: '/img/alimentos.jpg',
+        alt: 'Mercados'
+      },
       stores: [
         {
-          id: 1,
-          title: 'Tienda 1',
-          body: 'La tiendita 1',
-          contact: '3335566'
+          title: 'Tienda la 54',
+          type: 'Tienda',
+          description: 'Frutas, verduras y abarrotes',
+          contact: ['3444453', '55762777']
         },
         {
-          id: 2,
-          title: 'Tienda 2',
-          body: 'La tiendita 2',
-          contact: '333455553'
+          title: 'Plaza de mercado Chapinero',
+          type: 'Plaza',
+          description: 'Sólo frutas y verduras',
+          contact: ['333455553', '7777777']
         }
       ]
     }

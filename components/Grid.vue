@@ -1,7 +1,14 @@
 <template>
 <v-app>
     <section class="grid">
-      <Card v-for="item in items" :key="item.id" :title="item.title" :body="item.body" :contact="item.contact" />
+      <Card 
+        v-for="(item, index) in items"
+        :key="index"
+        :title="item.title"
+        :type="item.type"
+        :description="item.description"
+        :contact="item.contact" 
+      />
     </section>
   </v-app>
 </template>
