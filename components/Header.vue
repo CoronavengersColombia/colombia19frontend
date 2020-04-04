@@ -43,8 +43,8 @@ export default {
   data: () => ({
     title: 'Colombia 19',
     menu: [
-      { id: 1, title: "Inicio", link: '/colombia19frontend/' },
-      { id: 2, title: "Mercar desde casa", link: '/colombia19frontend/mercados/' }
+      { id: 1, title: "Inicio", link: '/' },
+      { id: 2, title: "Mercar desde casa", link: '/mercados/' }
       // { id: 3, title: "Donaciones", link: '/colombia19frontend/donar' }
     ]
   })
