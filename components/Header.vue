@@ -20,7 +20,7 @@
               class="hidden-md-and-up"
               v-on="on"
               icon
-            ></v-app-bar-nav-icon>
+            >Menu</v-app-bar-nav-icon>
           </template>
           <v-list>
             <v-list-item
