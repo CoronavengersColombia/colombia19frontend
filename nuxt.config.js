@@ -10,7 +10,7 @@ export default {
   /*
    ** Router
    */
-  routerBase,
+  ...routerBase,
   /*
    ** Headers of the page
    */
