@@ -6,7 +6,7 @@
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
           <v-btn 
-            v-for="(item, index) in menuItems"
+            v-for="(item, index) in menu"
             :key="index"
             :to="item.link"
             text
@@ -24,7 +24,7 @@
           </template>
           <v-list>
             <v-list-item
-              v-for="(item, index) in menuItems"
+              v-for="(item, index) in menu"
               :key="index"
               :to="item.link"
             >
@@ -42,18 +42,12 @@ export default {
   name: 'Header',
   data: () => ({
     title: 'Colombia 19',
-    menuItems: [
+    menu: [
       { id: 1, title: "Inicio", link: '/colombia19frontend/' },
       { id: 2, title: "Mercar desde casa", link: '/colombia19frontend/mercados/' },
       { id: 3, title: "Donaciones", link: '/colombia19frontend/donar' }
     ]
-  }),
- 
-  methods: {
-    menuItems() {
-      return this.menu;
-    }
-  }
+  })
 }
 </script>
 <style lang="scss">
