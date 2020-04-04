@@ -1,18 +1,14 @@
 
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/colombia19frontend/'
-  }
-} : {}
-
 export default {
   mode: 'universal',
+  
   /*
    ** Router
    */
   router: {
-    base: '/colombia19frontend/'
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/colombia19frontend/' : '/'
   },
+
   /*
    ** Headers of the page
    */
