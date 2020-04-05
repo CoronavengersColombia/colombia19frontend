@@ -5,8 +5,8 @@
         v-for="(item, index) in items"
         :key="index"
         :title="item.name"
-        :type="item.type"
         :description="item.description"
+        :type="item.store_type_description"
         :contact="item.contact" 
       />
     </section>
