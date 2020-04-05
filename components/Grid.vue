@@ -4,7 +4,7 @@
       <Card 
         v-for="(item, index) in items"
         :key="index"
-        :title="item.title"
+        :title="item.name"
         :type="item.type"
         :description="item.description"
         :contact="item.contact" 

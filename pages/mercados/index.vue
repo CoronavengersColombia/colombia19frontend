@@ -17,25 +17,11 @@ export default {
   },
   data() {
     return {
-      cases: [],
       hero: {
         src: './img/alimentos.jpg',
         alt: 'Mercados'
       },
-      stores: [
-        {
-          title: 'Tienda la 54',
-          type: 'Tienda',
-          description: 'Frutas, verduras y abarrotes',
-          contact: ['3444453', '55762777']
-        },
-        {
-          title: 'Plaza de mercado Chapinero',
-          type: 'Plaza',
-          description: 'Sólo frutas y verduras',
-          contact: ['333455553', '7777777']
-        }
-      ]
+      stores: []
     }
   },
   async created() {
@@ -47,9 +33,11 @@ export default {
     }
 
     try {
-      const url = 'https://colombia19-api.herokuapp.com/api/cases/'
+      const url = 'https://colombia19-api.herokuapp.com/api/stores/'
       const response = await axios.get(url, config)
-      this.cases = response.data
+      this.stores = response.data
+      console.log(response)
+      window.cosito = response
     } catch (err) {
       console.log('ERROR:')
       console.log(err)
