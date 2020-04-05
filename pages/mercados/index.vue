@@ -19,7 +19,7 @@ export default {
     return {
       cases: [],
       hero: {
-        src: '/img/alimentos.jpg',
+        src: './img/alimentos.jpg',
         alt: 'Mercados'
       },
       stores: [
