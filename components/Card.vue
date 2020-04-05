@@ -11,11 +11,9 @@
 
         <v-card-actions>
           <v-btn
-            v-for="(item, index) in contact"
-            :key="index"
             text
           > 
-            {{ item }}
+            {{ contact }}
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -25,7 +23,7 @@
 <script>
 export default {
   name: 'Card',
-  props: ['title', 'type', 'description', 'contact']
+  props: ['title', 'description', 'type', 'contact']
 }
 </script>
 
